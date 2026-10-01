@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ridge Hunters</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ridge Hunters — kameralne alpejskie przygody, trekking i via ferraty." />
+  <meta name="theme-color" content="#0b1114" />
+  <title>Ridge Hunters — Alpejskie przygody</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Ridge Hunters</h1>
-  <p>Strona jest online! 🏔️</p>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Ridge Hunters — strona główna">
+      <span class="brand-mark">▲</span>
+      <span>RIDGE HUNTERS</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav">
+      <a href="#o-nas">O nas</a>
+      <a href="#wyprawy">Wyprawy</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#kontakt" class="nav-cta">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">ALPY • TREKKING • VIA FERRATA</p>
+        <h1>Nie oglądaj gór<br><span>z daleka.</span></h1>
+        <p class="hero-copy">
+          Ridge Hunters to kameralne alpejskie przygody dla ludzi,
+          którzy chcą przeżyć góry naprawdę.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#wyprawy">Zobacz wyprawy</a>
+          <a class="btn btn-ghost" href="#o-nas">Poznaj nas</a>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#o-nas" aria-label="Przewiń niżej">
+        <span>SCROLL</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="manifesto section" id="o-nas">
+      <div class="section-kicker reveal">RIDGE HUNTERS</div>
+      <div class="manifesto-grid">
+        <h2 class="reveal">Małe grupy.<br>Wielkie góry.</h2>
+        <div class="manifesto-copy reveal">
+          <p>
+            Bez masówki, bez gonienia za checklistą. Liczy się droga,
+            ludzie i miejsca, do których chce się wracać.
+          </p>
+          <p>
+            Wybieramy alpejskie trasy, które mają charakter — od widokowych
+            trekkingów po bardziej ambitne górskie przygody.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-break image-break-lakes" aria-label="Alpejskie jeziora">
+      <div class="image-break-caption reveal">
+        <span>HOHE TAUERN</span>
+        <strong>Beyond the ordinary.</strong>
+      </div>
+    </section>
+
+    <section class="section adventures" id="wyprawy">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker">WYPRAWY</p>
+          <h2>Wybierz swój poziom przygody.</h2>
+        </div>
+        <p>
+          Od pięknych trekkingów po bardziej wymagające górskie cele.
+          Program dobieramy tak, żeby było ambitnie — ale z głową.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="adventure-card reveal">
+          <img src="assets/group.webp" alt="Grupa Ridge Hunters w Alpach" loading="lazy" />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span>01</span>
+            <h3>Alpine Weekends</h3>
+            <p>Kameralne wyjazdy i największe widoki w krótkim czasie.</p>
+          </div>
+        </article>
+
+        <article class="adventure-card reveal">
+          <img src="assets/rock.webp" alt="Surowy alpejski teren skalny" loading="lazy" />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span>02</span>
+            <h3>High Mountain</h3>
+            <p>Surowe trasy, wysokość i prawdziwy górski klimat.</p>
+          </div>
+        </article>
+
+        <article class="adventure-card reveal">
+          <img src="assets/snow.webp" alt="Wędrówka w skalnym i śnieżnym terenie" loading="lazy" />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span>03</span>
+            <h3>More Adventure</h3>
+            <p>Dla tych, którzy chcą pójść trochę dalej niż zwykły hiking.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-inner reveal">
+        <p class="section-kicker">NASZA FILOZOFIA</p>
+        <blockquote>
+          „Nie chodzi o to, żeby tylko wejść na szczyt.<br>
+          Chodzi o to, żeby <em>coś przeżyć.</em>”
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker">GALERIA</p>
+          <h2>Tak wyglądają nasze Alpy.</h2>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-large reveal">
+          <img src="assets/hero.webp" alt="Brązowe alpejskie góry i turkusowe jezioro" loading="lazy" />
+        </figure>
+        <figure class="reveal">
+          <img src="assets/lakes.webp" alt="Turkusowe jeziora w wysokich górach" loading="lazy" />
+        </figure>
+        <figure class="reveal">
+          <img src="assets/group.webp" alt="Grupa uczestników wyprawy Ridge Hunters" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta-section" id="kontakt">
+      <div class="cta-bg"></div>
+      <div class="cta-content reveal">
+        <p class="section-kicker">GOTOWA / GOTOWY?</p>
+        <h2>Zamień weekend<br>na alpejską przygodę.</h2>
+        <p>Chcesz wiedzieć, co planujemy dalej? Napisz do nas.</p>
+        <a class="btn btn-primary" href="mailto:hello@ridgehunters.com">Napisz do nas</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">▲</span><span>RIDGE HUNTERS</span></a>
+    <p>Alpine adventures from Poland to the Alps.</p>
+    <p class="copyright">© <span id="year"></span> Ridge Hunters</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
